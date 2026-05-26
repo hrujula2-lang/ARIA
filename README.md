@@ -1,64 +1,87 @@
-# AI Call Assistant
+# ARIA — AI Medical Receptionist
 
-An AI-powered voice assistant built using VAPI and Zapier to automate inbound calls, appointment scheduling, and follow-up communication workflows.
+An AI-powered voice receptionist built to automate clinic appointment booking using VAPI and Zapier system integration.
+
+---
+
+## 🔴 Live Demo
+Call ARIA right now: **+1 (925) 332-3065**
+Speak in English, Hindi, or Marathi — she will check real-time availability and book a real appointment on a live Google Calendar.
 
 ---
 
 ## Features
-
-- AI-generated voice responses for inbound calls
-- Automated appointment booking workflow
-- Follow-up email automation using Zapier
-- Real-time workflow triggers and integrations
-- Low-code AI communication pipeline
+- Automated inbound call handling via AI voice agent
+- Real-time appointment booking on Google Calendar
+- Slot conflict prevention — zero double bookings
+- Multilingual support — English, Hindi, and Marathi
+- Automated email confirmation sent post-booking
+- Full call transcript and workflow logs on VAPI dashboard
 
 ---
 
 ## Tech Stack
-
-- Python
-- VAPI
-- Zapier
-- APIs & Automation Workflows
-
----
-
-## Project Overview
-
-This project was developed as a first-year capstone project to explore real-world AI automation and voice assistant systems. The assistant can handle incoming calls, interact with users using AI-generated responses, automate scheduling tasks, and trigger follow-up workflows without manual intervention.
+- VAPI (Voice AI Platform)
+- Zapier (Automation & System Integration)
+- GPT-4.1 by OpenAI (Language Model)
+- Deepgram (Multilingual Speech-to-Text)
+- Google Calendar API (via Zapier)
+- Gmail (Automated Email via Zapier)
+- Prompt Engineering
 
 ---
 
 ## How It Works
-
-1. User places an inbound call
-2. VAPI handles AI voice interaction
-3. Workflow triggers are processed through Zapier
-4. Appointment details are captured automatically
-5. Follow-up emails are sent in real time
+1. Patient calls +1 (925) 332-3065
+2. ARIA answers and detects preferred language (English / Hindi / Marathi)
+3. Zapier Workflow 1 queries Google Calendar for free and busy slots in real time
+4. Patient selects a slot — Zapier Workflow 2 creates the appointment on the doctor's calendar
+5. If patient provides their email, confirmation is sent automatically via Gmail
+6. ARIA confirms the booking verbally and ends the call
 
 ---
 
-## Learning Outcomes
+## System Integration Architecture
+**VAPI ↔ Zapier ↔ Google Calendar**
 
-- Built practical experience with AI workflow automation
-- Learned API integration and event-based systems
-- Explored voice AI and conversational interfaces
-- Improved problem-solving and rapid prototyping skills
+- Zapier Workflow 1 — Find Busy Periods in Calendar
+- Zapier Workflow 2 — Quick Add Event to Calendar
+
+Both workflows are triggered mid-call by ARIA through VAPI's tool calling feature.
+
+---
+
+## Results
+- 100% booking success rate across all test calls
+- Zero double bookings
+- Average latency — ~1,150ms
+- Average cost — ~$0.10 per minute
+- Tested in English, Hindi, and Marathi
+
+---
+
+## Note on Phone Number
+A US number is used because VAPI's free tier allocates US numbers. Obtaining an Indian number requires a registered business, GST number, PAN card, and license — which as a student I don't currently have. Getting an Indian number is the first planned upgrade.
 
 ---
 
 ## Future Improvements
+- Indian phone number once business registration is available
+- Multi-doctor calendar support with specialty routing
+- WhatsApp and web chat interface
+- Symptom pre-screening before appointments
+- Analytics dashboard for clinic management
+- Patient data privacy — DPDP Act compliance
 
-- Add database integration
-- Implement multilingual voice support
-- Add dashboard analytics
-- Improve conversational memory and personalization
+---
+
+## Project Context
+Developed independently as a First Year Capstone Project
+B.Tech CSE (AI & ML) — DY Patil College of Engineering and Technology, Kolhapur
+A.Y. 2025-26
 
 ---
 
 ## Author
-
-Hrujula Patil  
-First-Year B.Tech CSE (AI & ML)
-
+**Hrujula Patil**
+hrujula2@gmail.com
